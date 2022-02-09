@@ -1,8 +1,12 @@
+import { Info, Container } from "./style";
+
 export const Card = (props) => {
-    return (
-      <div>
+  return (
+    <Container>
+      <Info>
         <h2>{props.name}</h2>
-        <img src={props.img} alt={props.name} />
-      </div>
-    );
-  };
+      </Info>
+      <img src={props.img} alt={props.name} />
+    </Container>
+  );
+};
